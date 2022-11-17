@@ -4,9 +4,11 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --mode development",
     "build": "vue-tsc --noEmit && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "build:test": "vite build --mode testing",
+    "build:prod": "vite build --mode production"
   },
   "dependencies": {
     "@kangc/v-md-editor": "^2.3.15",

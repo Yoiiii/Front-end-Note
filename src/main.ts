@@ -11,7 +11,8 @@ import '@kangc/v-md-editor/lib/style/base-editor.css'
 import githubTheme from '@kangc/v-md-editor/lib/theme/github.js'
 import '@kangc/v-md-editor/lib/theme/style/github.css'
 import hljs from 'highlight.js'
-axios.defaults.baseURL = 'http://localhost:3000/note/api/'
+// axios.defaults.baseURL = 'http://localhost:3000/note/api/'
+axios.defaults.baseURL = import.meta.env.VITE_BASE_API
 axios.interceptors.request.use(config => {
   store.commit('setLoading', true)
   store.commit('setError', { status: false, message: '' })
