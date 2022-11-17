@@ -9,6 +9,7 @@ import Edit from './views/EditInfo.vue'
 import Post from './views/PostDetail.vue'
 import EditPost from './views/EditPost.vue'
 import CreateColumn from '@/views/CreateColumn.vue'
+import About from '@/views/AboutPage.vue'
 import axios from 'axios'
 import store from './store'
 const routerHistory = createWebHistory()
@@ -68,6 +69,11 @@ const router = createRouter({
       name: 'editpost',
       component: EditPost,
       meta: { requireLogin: true }
+    },
+    {
+      path: '/about',
+      name: 'about',
+      component: About
     }
   ]
 })

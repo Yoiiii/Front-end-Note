@@ -9,8 +9,9 @@
       <small>
         <ul class="list-inline mb-0">
           <li class="list-inline-item"><RouterLink to="/">首页</RouterLink></li>
-          <li class="list-inline-item">关于</li>
-          <li class="list-inline-item"></li>
+          <li class="list-inline-item"><RouterLink to="/about">关于</RouterLink></li>
+          <li class="list-inline-item"><a href="https://github.com/Yoiiii/Front-end-Note">github</a></li>
+          <li class="list-inline-item"><a href="https://gitee.com/ShawYoi/Front-end-Note">gitee</a></li>
           <li class="list-inline-item"><a href="https://beian.miit.gov.cn/">粤ICP备20019631号</a></li>
           <li class="list-inline-item">powered by ShawYoi</li>
         </ul>
