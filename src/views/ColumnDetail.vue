@@ -51,7 +51,7 @@ onMounted(() => {
 </script>
 <style>
 .w-690 {
-  width: 690px;
+  max-width: 690px;
   margin:0 auto;
 }
 .card-body {

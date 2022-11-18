@@ -34,7 +34,7 @@
       <div class="mb-3">
         <label class="form-label">文章专栏:</label>
         <DropDown ref="dropDown" class="btn-secondary" :title="selectedColumn.title">
-            <DropDownItem v-for="column in columnList" :key="column._id"><a href="#" @click="selectColumn(column)" class="dropdown-item">{{column.title}}</a></DropDownItem>
+            <DropDownItem v-for="column in columnList" :key="column._id"><a href="#" @click.prevent="selectColumn(column)" class="dropdown-item">{{column.title}}</a></DropDownItem>
         </DropDown>
       </div>
       <div class="mb-3">

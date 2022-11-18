@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHashHistory } from 'vue-router'
 import Home from './views/HomePage.vue'
 import Login from './views/myLogin.vue'
 import ColumnList from '@/views/MyColumn.vue'
@@ -12,7 +12,7 @@ import CreateColumn from '@/views/CreateColumn.vue'
 import About from '@/views/AboutPage.vue'
 import axios from 'axios'
 import store from './store'
-const routerHistory = createWebHistory()
+const routerHistory = createWebHashHistory()
 const router = createRouter({
   history: routerHistory,
   routes: [
