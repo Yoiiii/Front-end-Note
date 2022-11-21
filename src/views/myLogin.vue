@@ -19,6 +19,7 @@
           placeholder="请输入密码"
           :rules="passwordRules"
           v-model="passwordVal"
+          @keyup.enter="onFormSubmit"
         />
       </div>
       <RouterLink to="/signup" >还没有账户？去注册一个新的吧！</RouterLink>

@@ -38,6 +38,7 @@ import { type } from 'os';
           v-model="formData.repeatPassword"
           placeholder="请输入昵称密码"
           type="password"
+          @keyup.enter="onFormSubmit"
         />
       </div>
       <RouterLink style="display: block;" to="/login" >已经有账户了？去登录</RouterLink>

@@ -49,7 +49,11 @@
         ></validate-input>
       </div>
       <template #submit>
-        <button class="btn btn-primary btn-large">{{isEditMode ?'更新文章':'发表文章'}}</button>
+        <button v-if="!isEditMode" class="btn btn-primary btn-large">发表文章</button>
+        <div v-else class="btn-group">
+          <button  class="btn btn-primary btn-large">更新文章</button>
+          <button @click.stop class="btn btn-secondary btn-large"  @click.prevent="router.go(-1)">返回</button>
+        </div>
       </template>
     </validate-form>
   </div>
